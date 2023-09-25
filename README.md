@@ -4,7 +4,7 @@
 
 BrickCanvas Customizer is a web application that allows users to personalize bricks with custom text and designs. Built with HTML, CSS, and JavaScript, this project offers an interactive canvas for real-time design previews, making it easier for customers to visualize their customized bricks before purchasing.
 
-![BrickCanvas Customizer Screenshot](screenshot.png)
+![BrickCanvas Customizer Screenshot](mainPage.png)
 
 ## Features
 
