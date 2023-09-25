@@ -1,0 +1,121 @@
+<!-- make a page and show people the 2 bricks available (4x8 adn 8x8) and show its price and redirect them to new page accordingly, have the bigger brick on the left and smaller on the right -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brick Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width:80%;
+        }
+
+        .brick {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 300px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .brick:hover {
+            transform: scale(1.05);
+            background-color: #f5f5f5;
+        }
+
+        .brick p {
+            margin: 0;
+        }
+
+        .brick-title {
+            font-size: 24px;
+            color: #000000;
+        }
+
+        .brick-price {
+            font-size: 33px;
+            color: #000000;
+        }
+
+        .brick-image {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .brick-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 781px) {
+            .brick {
+                width: calc(80% - 40px);
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to our Brick Store!</h1>
+    <p>Please select the size of brick you would like to purchase:</p>
+    <div class="container2">
+        <a href="brick.html">
+            <div class="brick">
+                <div class="brick-text">
+                    <div class="brick-title">8x8 Brick</div> 
+                    <!-- change the price of 8x8 brick here    -->
+                    <div class="brick-price">$5.00</div>
+                </div><br>
+                <img src="https://www.uwindsor.ca/engineering/sites/uwindsor.ca.engineering/files/brick.png"
+                    alt="8x8 Brick" class="brick-image">
+            </div>
+        </a>
+        <a href="brick2.html">
+            <div class="brick">
+                <div class="brick-text">
+                    <div class="brick-title">4x8 Brick</div>
+                    <!-- change the price of 4x8 brick here    -->
+                    <div class="brick-price">$3.00</div>
+                </div>
+                <img src="https://www.uwindsor.ca/engineering/sites/uwindsor.ca.engineering/files/brick2.png"
+                    alt="4x8 Brick" class="brick-image">
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

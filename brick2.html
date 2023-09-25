@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="brick2.css">
+</head>
+
+<body>
+  <div class="container2">
+    <canvas id="canvas"></canvas><br>
+
+    <form>
+      <br><br>
+      <!--Input text -->
+      <label for="text">Enter text: (max 50 characters) </label>
+      <input type="text" id="text" name="text" maxlength="70" onkeyup="removeSpaces(this)"><br><br>
+      <div id="feedback"></div><br>
+      <!--Input name -->
+      <label for="text">Enter Name: (max 25 characters) </label>
+      <input type="text" id="name" name="name" maxlength="35" onkeyup="removeSpaces2(this)"><br><br>
+      <div id="feedback2"></div><br>
+      <!--Select font -->
+      <label for="font-select">&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select font: </label>
+      <select id="font-select">
+        <option value="din-2014">DIN </option>
+        <option value="Century Schoolbook">Century Schoolbook</option>
+        <!-- To add new font - <option value="Times New Roman">Times New Roman</option> -->
+      </select><br><br>
+      <button type="button" onclick="draw()">Draw</button>
+    </form>
+    
+  </div>
+  <link href="https://fonts.cdnfonts.com/css/century-schoolbook" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/din-2" rel="stylesheet">
+  <script src="brick2.js"></script>
+</body>
+
+</html>
